@@ -17,18 +17,20 @@
       padding: 2.5rem 1.5rem !important; padding-top: 0 !important;
       max-width: var(--max-w); margin: 0 auto;
     }
-    /* Force all hero text white on desktop */
-    .page-hero-content,
-    .page-hero-content h1,
-    .page-hero-content h2,
-    .page-hero-content p,
-    .page-hero-content .eyebrow,
-    .page-hero-content .page-subtitle,
-    .page-hero-content .hero-subtext {
-      color: var(--white) !important;
+    /* Force all hero text white — desktop only */
+    @media (min-width: 700px) {
+      .page-hero-content,
+      .page-hero-content h1,
+      .page-hero-content h2,
+      .page-hero-content p,
+      .page-hero-content .eyebrow,
+      .page-hero-content .page-subtitle,
+      .page-hero-content .hero-subtext {
+        color: var(--white) !important;
+      }
+      .page-hero-content .eyebrow { letter-spacing: 0.18em; opacity: 0.85; }
+      .page-hero-content .page-subtitle { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; }
     }
-    .page-hero-content .eyebrow { letter-spacing: 0.18em; opacity: 0.85; }
-    .page-hero-content .page-subtitle { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; }
         @media (max-width: 699px) {
       .page-hero { display: flex; flex-direction: column; }
       .page-hero-overlay { display: none !important; }

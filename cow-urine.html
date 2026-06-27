@@ -43,14 +43,16 @@
     }
 
     /* Mobile: move text below image, no overlay */
-    /* Force all hero text white on desktop */
-    .page-hero-content,
-    .page-hero-content h1,
-    .page-hero-content p,
-    .page-hero-content .eyebrow,
-    .page-hero-content .page-subtitle,
-    .page-hero-content .hero-subtext {
-      color: var(--white) !important;
+    /* Force all hero text white — desktop only */
+    @media (min-width: 700px) {
+      .page-hero-content,
+      .page-hero-content h1,
+      .page-hero-content p,
+      .page-hero-content .eyebrow,
+      .page-hero-content .page-subtitle,
+      .page-hero-content .hero-subtext {
+        color: var(--white) !important;
+      }
     }
     .page-hero-content .page-subtitle { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; }
     @media (max-width: 699px) {
