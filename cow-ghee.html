@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cow Ghee (Ghrita) — The Nourishing Carrier | The Cow's Touch</title>
+  <meta name="description" content="Discover the ancient wisdom and modern science behind ghrita — pure cow ghee. From Vedic fire rituals and Abhyanga massage to its unique nutritional profile.">
+  <meta property="og:title" content="The Cow's Touch — Sacred Gifts of the Cow">
+  <meta property="og:image" content="/images/og-image.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Hero: natural height, text overlaid on desktop, below on mobile ── */
+    .page-hero { position: relative; min-height: unset; }
+    .page-hero img {
+      position: relative !important;
+      width: 100%; height: auto !important;
+      object-fit: unset !important; display: block;
+    }
+    .page-hero-overlay {
+      position: absolute; inset: auto 0 0 0 !important; height: 55%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(20,14,4,0.65) 70%, rgba(20,14,4,0.82) 100%) !important;
+    }
+    .page-hero-content {
+      position: absolute !important; bottom: 0; left: 0; right: 0;
+      padding: 2.5rem 1.5rem !important; padding-top: 0 !important;
+      max-width: var(--max-w); margin: 0 auto;
+    }
+    @media (max-width: 699px) {
+      .page-hero { display: flex; flex-direction: column; }
+      .page-hero-overlay { display: none !important; }
+      .page-hero-content {
+        position: relative !important; background: var(--cream);
+        padding: 1.5rem !important; bottom: auto;
+      }
+      .page-hero-content .eyebrow { color: var(--gold); }
+      .page-hero-content h1 { color: var(--green); }
+      .page-hero-content .page-subtitle { color: var(--green); font-style: italic; }
+      .page-hero-content .hero-subtext { color: var(--text) !important; font-size: 0.95rem; }
+    }
+    /* ── Single-column centred images throughout ── */
+    .section-img {
+      display: block; width: 100%; max-width: 700px;
+      margin: 2rem auto; border-radius: 6px;
+      box-shadow: 0 8px 32px rgba(44,74,53,0.13);
+    }
+    .section-img-caption {
+      text-align: center; font-size: 0.82rem; color: var(--text-light);
+      font-style: italic; margin-top: -1rem; margin-bottom: 2rem;
+    }
+    .text-block { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Usage cards ── */
+    .usage-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem; margin: 2rem 0;
+    }
+    .usage-card {
+      background: var(--white); border: 1px solid var(--cream-deep);
+      border-radius: 4px; padding: 1.5rem; text-align: center;
+    }
+    .usage-card .usage-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .usage-card h4 { color: var(--green); margin-bottom: 0.4rem; }
+    .usage-card p { font-size: 0.88rem; margin: 0; }
+
+    /* ── Quality checklist ── */
+    .quality-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem; margin: 2rem 0;
+    }
+    .quality-item {
+      background: var(--white); border-left: 3px solid var(--gold);
+      padding: 1.2rem 1.5rem; border-radius: 0 4px 4px 0;
+    }
+    .quality-item h4 { color: var(--green); margin-bottom: 0.3rem; font-size: 1rem; }
+    .quality-item p { font-size: 0.88rem; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Cow's <span>Touch</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cow-dung.html">Cow Dung</a></li>
+        <li><a href="cow-urine.html">Cow Urine</a></li>
+        <li><a href="cow-ghee.html" class="active">Cow Ghee</a></li>
+        <li><a href="panchagavya.html">Panchagavya</a></li>
+        <li><a href="how-to-apply.html">How to Apply</a></li>
+        <li><a href="protecting-the-cow.html">Protecting the Cow</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="my-story.html">My Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <img src="images/ghee_hero.jpg" alt="Sacred brass vessel filled with golden ghee alongside a decorated cow and marigold offerings" loading="eager">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="eyebrow">Ghrita · The Third Gift</span>
+      <h1>Cow Ghee</h1>
+      <p class="page-subtitle">The Nourishing Carrier</p>
+      <p class="hero-subtext">From milk comes curd; from curd comes butter; from butter comes ghee — the essence of nourishment, refined by fire.</p>
+    </div>
+  </section>
+
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Cow Ghee</div>
+
+  <nav class="page-tabs" aria-label="Page sections">
+    <div class="page-tabs-inner">
+      <a href="#vedic">Vedic Tradition</a>
+      <a href="#science">The Science</a>
+      <a href="#usage">How to Use</a>
+      <a href="#quality">Quality Matters</a>
+      <a href="#guide">How to Apply</a>
+    </div>
+  </nav>
+
+  <!-- Intro -->
+  <section class="section">
+    <div class="text-block reveal">
+      <p>In the ancient texts of Ayurveda and the Vedic scriptures, ghee is described not merely as food, but as a sacred substance carrying immense potency. It is called <em>amrita</em> — nectar of immortality — because it preserves vitality, enhances memory, and supports longevity.</p>
+      <p>This page traces its story from the Vedic fire ritual to modern nutritional science — and offers practical guidance on how to bring it into your own life.</p>
+    </div>
+  </section>
+
+  <!-- Vedic Tradition -->
+  <section class="section" id="vedic" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <span class="eyebrow">Ancient Wisdom</span>
+        <h2>Vedic Tradition</h2>
+      </div>
+
+      <img src="images/ghee_yajna_ritual.jpg" alt="Ghee being poured from a brass ladle into a sacred fire during a Vedic yajna ritual" loading="lazy" class="section-img reveal">
+
+      <div class="reveal">
+        <h3>A Thousand Potencies</h3>
+        <p>The <strong>Charaka Samhita</strong> states that pure ghee possesses "a thousand potencies" and adapts itself to balance all three doshas — <em>vata</em>, <em>pitta</em>, and <em>kapha</em> — when prepared correctly. Ghee forms the base of almost all classical Ayurvedic herbal preparations; it is said to be the best medium to carry the healing properties of herbs deep into the body's tissues.</p>
+
+        <h3 style="margin-top:1.5rem;">Ritual &amp; Daily Life</h3>
+        <p>In daily and ritual life, ghee is central to <strong>Abhyanga</strong> — the traditional warm oil massage — and to fire sacrifices (<em>yajna</em>), where it is offered to carry prayers and intentions upward. For thousands of years, it has been revered as the "sunshine of the kitchen" and the bridge between physical nourishment and spiritual well-being.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science -->
+  <section class="section" id="science">
+    <div class="text-block">
+      <div class="reveal">
+        <span class="eyebrow">Modern Research</span>
+        <h2>The Science</h2>
+        <p>Modern research confirms what tradition has long taught: pure cow ghee is a concentrated source of easily absorbed nutrients. Its unique composition makes it very different from ordinary butter or other fats.</p>
+      </div>
+
+      <img src="images/ghee_science-fatty-acid-profile.jpg" alt="Ghee fatty acid profile showing MCTs, CLA and Butyric Acid with molecular diagrams" loading="lazy" class="section-img reveal">
+
+      <img src="images/ghee_science-close-up.jpg" alt="Close-up macro photograph of crystallized golden ghee showing its grainy texture" loading="lazy" class="section-img reveal">
+
+      <div class="reveal">
+        <div class="usage-grid">
+          <div class="usage-card">
+            <div class="usage-icon">⚡</div>
+            <h4>Medium-Chain Triglycerides (MCTs)</h4>
+            <p>Easily digested, quickly converted into energy, and supportive of healthy metabolism.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">🌿</div>
+            <h4>Butyric Acid</h4>
+            <p>A short-chain fatty acid that supports gut health, reduces inflammation, and helps maintain the integrity of the intestinal lining.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">✦</div>
+            <h4>Conjugated Linoleic Acid (CLA)</h4>
+            <p>Known for its antioxidant properties and role in supporting healthy cell function.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">☀️</div>
+            <h4>Fat-Soluble Vitamins</h4>
+            <p>Rich in vitamins A, D, E, and K — all essential for skin health, immunity, bone strength, and vision.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">🔥</div>
+            <h4>High Smoke Point</h4>
+            <p>Unlike many oils, ghee remains stable at higher temperatures, making it safe for cooking without forming harmful compounds.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">🌸</div>
+            <h4>Skin Healing</h4>
+            <p>Topical application supports tissue repair, soothes burns, reduces irritation, and creates a protective barrier that locks in moisture without clogging pores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use -->
+  <section class="section" id="usage" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <span class="eyebrow">Practical Guidance</span>
+        <h2>How to Use Ghee</h2>
+        <p>Pure cow ghee is incredibly versatile, working both as nourishing food and a powerful skin treatment.</p>
+      </div>
+
+      <img src="images/ghee_cooking.jpg" alt="Golden ghee being drizzled from a spoon over a bowl of steaming rice" loading="lazy" class="section-img reveal">
+
+      <img src="images/ghee_massage.jpg" alt="Warm ghee being applied in a traditional Abhyanga massage on glowing skin" loading="lazy" class="section-img reveal">
+
+      <div class="reveal">
+        <div class="usage-grid">
+          <div class="usage-card">
+            <div class="usage-icon">🍯</div>
+            <h4>Internal Use</h4>
+            <p>Take ½–1 teaspoon daily, add to warm drinks or meals, or use for cooking. It supports digestion and delivers nutrients deep into the body. 1–2 teaspoons per day is usually enough.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">✋</div>
+            <h4>Topical Use (Abhyanga)</h4>
+            <p>Warm gently and apply as a full-body massage. Use long strokes on arms and legs, soft circular motions on joints. Leave for 15–30 minutes then rinse. Best done morning or evening.</p>
+          </div>
+          <div class="usage-card">
+            <div class="usage-icon">🌿</div>
+            <h4>Medicated Ghee</h4>
+            <p>Herbs can be infused into ghee to amplify their effects, turning it into a targeted healing preparation far more potent than herbs taken alone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Matters -->
+  <section class="section" id="quality">
+    <div class="text-block">
+      <div class="reveal">
+        <span class="eyebrow">Important Note</span>
+        <h2>Quality Matters</h2>
+        <p>Just as with dung and urine, <strong>quality begins with the cow</strong>.</p>
+      </div>
+
+      <div class="reveal">
+        <div class="quality-grid">
+          <div class="quality-item">
+            <h4>🐄 A2 Milk from Heritage Breeds</h4>
+            <p>The best ghee comes from A2 milk, produced by traditional Indian breeds such as Gir, Sahiwal, or Tharparkar, fed on natural grass and herbs.</p>
+          </div>
+          <div class="quality-item">
+            <h4>🔥 Traditional Preparation</h4>
+            <p>It should be made using the traditional method: churning curd into butter, then clarifying the butter by slow heating — not just separating milk solids from cream.</p>
+          </div>
+          <div class="quality-item">
+            <h4>✨ Signs of Quality</h4>
+            <p>Good ghee has a golden-yellow colour, a rich aroma, and a slightly grainy texture when cool. It keeps well for months or even years when stored in a cool, dark place.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="note-box reveal" style="margin-top:1rem;">
+        <p>Ghee is the nourishing bridge. It supports the body to receive the benefits of the other gifts of the cow, and it stands as a powerful healer in its own right.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Apply -->
+  <section class="section" id="guide">
+    <div class="text-block reveal">
+      <span class="eyebrow">Next Steps</span>
+      <h2>Ready to Begin?</h2>
+      <p>For full step-by-step instructions, storage advice, and how to combine ghee with other cow products — visit the dedicated How to Apply page.</p>
+      <a href="how-to-apply.html" class="btn btn-gold" style="margin-top:1rem; display:inline-block;">How to Apply →</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><h3>Cow's Touch</h3><p>The sacred gifts of the cow — tradition, science, and lived experience.</p></div>
+      <div class="footer-col"><h4>The Gifts</h4><ul>
+        <li><a href="cow-dung.html">Cow Dung · Gomaya</a></li>
+        <li><a href="cow-urine.html">Cow Urine · Gomutra</a></li>
+        <li><a href="cow-ghee.html">Cow Ghee · Ghrita</a></li>
+        <li><a href="panchagavya.html">Panchagavya</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Explore</h4><ul>
+        <li><a href="how-to-apply.html">How to Apply</a></li>
+        <li><a href="protecting-the-cow.html">Protecting the Cow</a></li>
+        <li><a href="references.html">References &amp; Links</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul>
+        <li><a href="my-story.html">My Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cow's Touch. Traditional practice shared from personal experience — not medical advice.</span>
+      <span class="footer-mantra">Gomaye vasate Lakshmi · Gomutre Dhanvantari</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => { const o = links.classList.toggle('open'); toggle.setAttribute('aria-expanded', o); });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); toggle.setAttribute('aria-expanded', false); }));
+    document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((e) => { e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('visible'); } }); }, { threshold: 0.06 }).observe(el));
+  </script>
+</body>
+</html>
