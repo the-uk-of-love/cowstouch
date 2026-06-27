@@ -41,6 +41,22 @@
       max-width: var(--max-w);
       margin: 0 auto;
     }
+
+    /* Mobile: move text below image, no overlay */
+    @media (max-width: 699px) {
+      .page-hero { display: flex; flex-direction: column; }
+      .page-hero-overlay { display: none !important; }
+      .page-hero-content {
+        position: relative !important;
+        background: var(--cream);
+        padding: 1.5rem !important;
+        bottom: auto;
+      }
+      .page-hero-content .eyebrow { color: var(--gold); }
+      .page-hero-content h1 { color: var(--green); }
+      .page-hero-content .page-subtitle { color: var(--text-mid); }
+      .page-hero-content p { color: var(--text-mid); }
+    }
     .section-img {
       display: block;
       width: 100%;
