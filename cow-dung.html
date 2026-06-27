@@ -8,10 +8,59 @@
   <meta property="og:title" content="The Cow's Touch — Sacred Gifts of the Cow">
   <meta property="og:image" content="/images/og-image.png">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero { min-height: 85vh; }
+    .page-hero img { object-position: center 20%; }
+    .page-hero-overlay {
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.0) 0%,
+        rgba(0,0,0,0.05) 40%,
+        rgba(20,14,4,0.50) 75%,
+        rgba(20,14,4,0.75) 100%
+      ) !important;
+    }
+    .page-hero-content { padding-top: clamp(3rem, 60vh, 58vh); }
+
+    .section-img {
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      margin: 2rem auto;
+      border-radius: 6px;
+      box-shadow: 0 8px 32px rgba(44,74,53,0.13);
+    }
+    .section-img-caption {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      font-style: italic;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+    .text-block {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .veda-entry {
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.8rem;
+      background: var(--white);
+      border-radius: 0 4px 4px 0;
+    }
+    .veda-entry h4 {
+      color: var(--green);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .veda-entry p { font-size: 0.92rem; margin-bottom: 0.5rem; }
+    .veda-entry p:last-child { margin-bottom: 0; }
+  </style>
 </head>
 <body>
 
-  <!-- ── Navigation ────────────────────────────── -->
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Cow's <span>Touch</span></a>
@@ -33,7 +82,7 @@
     </div>
   </nav>
 
-  <!-- ── Page Hero ──────────────────────────────── -->
+  <!-- Hero -->
   <section class="page-hero">
     <img src="images/cow_dung_hero_mobile.jpg" alt="Sacred cow goddess touching a man as he applies cow dung to his skin" loading="eager">
     <div class="page-hero-overlay"></div>
@@ -41,11 +90,10 @@
       <span class="eyebrow">Gomaya · The First Gift</span>
       <h1>Cow Dung</h1>
       <p class="page-subtitle">The Earth's First Medicine</p>
-      <p style="color:rgba(253,250,244,0.75); font-size:1rem; margin-top:0.5rem;">Free, abundant, and more powerful than anything you have been told to expect.</p>
+      <p style="color:rgba(253,250,244,0.78); font-size:1rem; margin-top:0.5rem; max-width:50ch;">Free, abundant, and more powerful than anything you have been told to expect.</p>
     </div>
   </section>
 
-  <!-- ── Breadcrumb & In-page tabs ─────────────── -->
   <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Cow Dung</div>
 
   <nav class="page-tabs" aria-label="Page sections">
@@ -59,9 +107,9 @@
     </div>
   </nav>
 
-  <!-- ── Intro ──────────────────────────────────── -->
+  <!-- Intro -->
   <section class="section">
-    <div class="container reveal">
+    <div class="text-block reveal">
       <span class="eyebrow">The Starting Point</span>
       <p><strong>Of all the gifts the cow offers, this is the one nobody expects.</strong></p>
       <p>It is free. It is available wherever a cow grazes. It requires no collection method, no timing, no equipment, no preparation — simply a handful of fresh dung and a few quiet minutes. And yet for those who have allowed it to meet their skin, it has done things that years of other treatments, practices, and preparations were unable to do.</p>
@@ -70,112 +118,96 @@
     </div>
   </section>
 
-  <!-- ── Vedic Tradition ────────────────────────── -->
-  <section class="section" id="vedic" style="background: var(--cream-deep);">
-    <div class="container">
+  <!-- Vedic Tradition -->
+  <section class="section" id="vedic" style="background:var(--cream-deep);">
+    <div class="text-block">
       <div class="reveal">
         <span class="eyebrow">What the Ancient Texts Say</span>
         <h2>Five Thousand Years of Recorded Knowledge</h2>
         <p>All pointing in the same direction: Cow dung is not waste. It is pure medicine, a sacred purifier, and a gift that heals body, mind, and spirit.</p>
       </div>
 
-      <div class="two-col reveal" style="margin-top: 2.5rem;">
-        <div>
-          <img src="images/cow_dung_bowl.png" alt="Sacred cow dung in a golden bowl with herbs, radiating divine light" loading="lazy" style="border-radius:4px;">
-        </div>
-        <div>
-          <blockquote>
-            "Pañca-gavya, the five products received from the cow — namely milk, yogurt, ghee, cow dung and cow urine — are required in all ritualistic ceremonies performed according to the Vedic directions. Cow urine and cow dung are uncontaminated, and since even the urine and dung of a cow are important, we can just imagine how important this animal is for human civilization."
-            <cite>Srimad Bhagavatam 8.8.11 — Purport by A.C. Bhaktivedanta Swami Prabhupada</cite>
-          </blockquote>
-          <blockquote style="margin-top:1.5rem; font-size:1.1rem;">
-            "Gomaye vasate lakshmi, gomutre dhanvantari"
-            <cite>Goddess Lakshmi (health, beauty, prosperity) resides in cow dung; Lord Dhanvantari (divine physician) dwells in cow urine.</cite>
-          </blockquote>
-        </div>
+      <img src="images/cow_dung_bowl.png" alt="Sacred cow dung in a golden bowl with herbs, radiating divine light" loading="lazy" class="section-img reveal">
+
+      <div class="reveal">
+        <blockquote>
+          "Pañca-gavya, the five products received from the cow — namely milk, yogurt, ghee, cow dung and cow urine — are required in all ritualistic ceremonies performed according to the Vedic directions. Cow urine and cow dung are uncontaminated, and since even the urine and dung of a cow are important, we can just imagine how important this animal is for human civilization."
+          <cite>Srimad Bhagavatam 8.8.11 — Purport by A.C. Bhaktivedanta Swami Prabhupada</cite>
+        </blockquote>
+
+        <blockquote style="margin-top:1.5rem;">
+          "Gomaye vasate lakshmi, gomutre dhanvantari"
+          <cite>Goddess Lakshmi (health, beauty, prosperity) resides in cow dung; Lord Dhanvantari (divine physician) dwells in cow urine.</cite>
+        </blockquote>
       </div>
 
-      <!-- Vedic texts accordion-style list -->
-      <div class="reveal" style="margin-top: 3rem;">
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Atharva Veda (9.10.12) — The oldest Veda of healing</h4>
+      <div class="reveal" style="margin-top:2.5rem;">
+        <div class="veda-entry">
+          <h4>🔹 Atharva Veda (9.10.12) — The oldest Veda of healing</h4>
           <p>"Cow dung is the supreme purifier; it removes all impurities, destroys disease-causing elements, and increases sattva — the pure, luminous quality of body and mind. Applied to the skin, it restores natural radiance, clears blemishes, and protects from infection."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Rig Veda (1.164.40)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Rig Veda (1.164.40)</h4>
           <p>"All that comes from the cow is pure, holy, and healing. Her dung, when applied, is a balm for the skin, a cleanser of the blood, and a destroyer of pain and fever. It brings health where there is sickness, and peace where there is distress."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Srimad Bhagavatam (10.8.22–23)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Srimad Bhagavatam (10.8.22–23)</h4>
           <p>"When cow dung is smeared upon the body, it acts as a shield against all ill health. It cools inflammation, heals wounds, and makes the skin soft, clear, and luminous. It is not waste — it is medicine given freely by the cow."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Mahabharata (Anushasana Parva 13.78)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Mahabharata (Anushasana Parva 13.78)</h4>
           <p>"One should never feel repugnance toward cow dung or cow urine. They are not impure; they are pure, healing, and sanctifying. They cure diseases of the skin, blood, and nerves, and they purify the body and soul completely."</p>
           <p>"In the dung and urine of the cow dwell all the divine powers. Whoever uses them with respect obtains longevity, beauty, freedom from disease, and spiritual clarity."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Agni Purana (285.37–40)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Agni Purana (285.37–40)</h4>
           <p>"Cow dung mixed with water and applied to the skin removes itching, rashes, eczema, and all chronic skin conditions. It is the best remedy for burning sensations, sunstroke, and toxins in the blood."</p>
           <p>"Bathing with cow dung confers fortune, health, and beauty; it removes all sins and protects from misfortune. There is no purifier equal to it in all the three worlds."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Charaka Samhita (Ayurveda's foundational text)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Charaka Samhita — Ayurveda's foundational text</h4>
           <p>"Gomaya (cow dung) is anti-septic, antibacterial, and cooling. It heals wounds, reduces swelling, clears the complexion, and purifies the blood. It balances all three doshas, rejuvenates tissues, and is a supreme rasayana — a substance that restores youth and vitality."</p>
           <p>"When applied to the skin, it draws out toxins, stops infection, and brings natural glow. It is the first and most gentle medicine of the earth."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Sushruta Samhita (Ancient surgical &amp; medical text)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Sushruta Samhita — Ancient surgical &amp; medical text</h4>
           <p>"Cow dung is excellent for healing burns, boils, and skin diseases. It is soft, cooling, and nourishing; it promotes rapid repair of tissues and leaves no scar. It is pure, safe, and works when all else fails."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Devi Bhagavatam (11.12)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Devi Bhagavatam (11.12)</h4>
           <p>"The body should be rubbed with cow dung to remove all impurities, to make it holy, and to prepare it to receive divine energy. It cleanses more deeply than water alone, and makes one worthy of blessings."</p>
         </div>
-
-        <div style="border-left: 3px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem;">
-          <h4 style="color:var(--green); margin-bottom:0.4rem;">🔹 Garuda Purana (1.105.60)</h4>
+        <div class="veda-entry">
+          <h4>🔹 Garuda Purana (1.105.60)</h4>
           <p>"Cow dung is the destroyer of all ailments. It cures leprosy, itching, fever, and poisoning. It is pure, it is nectar, it is the gift of the cow to save humanity from suffering."</p>
         </div>
-
       </div>
 
-      <div class="note-box reveal">
-        <p>Cow dung is present in major Hindu rituals — from birth to death, from home consecration to deity installation. It is used to purify floors, walls, and altars. It is burned to produce <em>vibhuti</em>, the sacred ash that yogis and sadhus apply to the body daily. It is one of the five elements of Panchagavya, the complete Vedic healing formulation. The tradition is unambiguous: this substance is not waste. It is medicine. It is purifier. It is, in the deepest Vedic sense, a vehicle of the sacred.</p>
+      <div class="note-box reveal" style="margin-top:1rem;">
+        <p>Cow dung is present in major Hindu rituals — from birth to death, from home consecration to deity installation. It is used to purify floors, walls, and altars. It is burned to produce <em>vibhuti</em>, the sacred ash that yogis and sadhus apply to the body daily. The tradition is unambiguous: this substance is not waste. It is medicine. It is purifier. It is, in the deepest Vedic sense, a vehicle of the sacred.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── Science ────────────────────────────────── -->
+  <!-- Science -->
   <section class="section" id="science">
-    <div class="container">
+    <div class="text-block">
       <div class="reveal">
         <span class="eyebrow">What Modern Research Has Found</span>
         <h2>The "Happy Bacteria"</h2>
         <p>First discovered in cow dung, now confirmed by science.</p>
       </div>
 
-      <div class="two-col reveal" style="margin-top: 2rem;">
-        <div>
-          <img src="images/cow_dung_science_bacteria.jpg" alt="Illustration of Mycobacterium vaccae bacteria discovered in cow dung, with serotonin activation diagram" loading="lazy" style="border-radius:4px;">
-        </div>
-        <div>
-          <h3>Mycobacterium vaccae — The Science of Why Cow Dung Makes You Feel Good</h3>
-          <p><em>Mycobacterium vaccae</em> is a naturally occurring, non-pathogenic bacterium found in healthy soil worldwide — and in highest concentration in cow dung. It was first brought to mainstream scientific attention when Dr. Mary O'Brien of the Royal Marsden Hospital, London, began administering it to lung cancer patients to boost their immune systems. She noticed something unexpected: her patients reported being notably happier, experiencing less pain, and showing improved vitality.</p>
-          <p>Subsequent research at the University of Bristol confirmed the mechanism: <em>M. vaccae</em> stimulates a specific group of neurons in the brain that produce serotonin — the primary mood-regulating chemical — in a pattern comparable to that of antidepressant medications, but without any of their side effects.</p>
-          <p>The University of Colorado's research group, led by Dr. Christopher Lowry, has since published multiple studies confirming that immunisation with <em>M. vaccae</em> stabilises the gut microbiome, induces a shift toward stress resilience, and promotes sustained wellbeing. The effect is not temporary. It builds.</p>
-        </div>
+      <img src="images/cow_dung_science_bacteria.jpg" alt="Illustration of Mycobacterium vaccae bacteria with serotonin activation diagram" loading="lazy" class="section-img reveal">
+
+      <div class="reveal">
+        <h3>Mycobacterium vaccae — The Science of Why Cow Dung Makes You Feel Good</h3>
+        <p><em>Mycobacterium vaccae</em> is a naturally occurring, non-pathogenic bacterium found in healthy soil worldwide — and in highest concentration in cow dung. It was first brought to mainstream scientific attention when Dr. Mary O'Brien of the Royal Marsden Hospital, London, began administering it to lung cancer patients to boost their immune systems. She noticed something unexpected: her patients reported being notably happier, experiencing less pain, and showing improved vitality.</p>
+        <p>Subsequent research at the University of Bristol confirmed the mechanism: <em>M. vaccae</em> stimulates a specific group of neurons in the brain that produce serotonin — the primary mood-regulating chemical — in a pattern comparable to that of antidepressant medications, but without any of their side effects.</p>
+        <p>The University of Colorado's research group, led by Dr. Christopher Lowry, has since published multiple studies confirming that immunisation with <em>M. vaccae</em> stabilises the gut microbiome, induces a shift toward stress resilience, and promotes sustained wellbeing. The effect is not temporary. It builds.</p>
       </div>
 
-      <div class="stats-grid reveal" style="margin-top:2.5rem; background: var(--green); padding: 2.5rem; border-radius: 6px;">
+      <div class="stats-grid reveal" style="background:var(--green); padding:2.5rem; border-radius:6px; margin-top:2rem;">
         <div class="stat-box">
           <div class="stat-icon">2×</div>
           <h4>Cognitive Performance</h4>
@@ -204,39 +236,39 @@
     </div>
   </section>
 
-  <!-- ── Krishna & Talent ───────────────────────── -->
-  <section class="section" id="krishna" style="background: var(--cream-deep);">
-    <div class="container">
+  <!-- Krishna & Talent -->
+  <section class="section" id="krishna" style="background:var(--cream-deep);">
+    <div class="text-block">
       <div class="reveal">
         <span class="eyebrow">Krishna, the Cows, and the Origin of Talent</span>
         <h2>The Most Creative Being in All of Vedic Tradition</h2>
         <p>Spent his childhood playing in cow dung. This is not a coincidence.</p>
       </div>
 
-      <div class="two-col reveal" style="margin-top:2rem;">
-        <div>
-          <blockquote>
-            "The child was thoroughly washed with cow urine and then smeared with the dust raised by the movements of the cows. Then different names of the Lord were applied with cow dung on twelve different parts of His body, beginning with the forehead."
-            <cite>Srimad Bhagavatam 10.6.20 — The childhood of Krishna among the cowherds of Vrindavan</cite>
-          </blockquote>
-          <p>There is a detail in the accounts of Krishna's childhood that is often read as simply charming, and rarely examined for what it may actually be describing. Krishna, as a child among the cowherds of Vrindavan, is depicted playing in cow dung — rolling in it, covered in it, entirely unconcerned, as children at play often are.</p>
-          <p>Krishna is also, in the very same tradition, remembered as the supreme artist — the flute player whose music could stop time, the dancer, the poet, the strategist, the one whose creativity and charm were so total that they are described as divine attributes in themselves.</p>
-          <blockquote style="margin-top:1.5rem;">
-            "As these realizations crystallized, I recalled scriptural accounts of the young Sri Krishna playing joyfully in the cow dung as a child. I immediately connected his legendary creative brilliance — his timeless mastery of music, dance, and poetry — to this specific childhood activity."
-            <cite>Excerpt from the author's personal account</cite>
-          </blockquote>
-          <p>Cow dung may be not merely a remedy for the sick — it may be one of the most powerful and most overlooked developmental tools available to a growing child, or to an adult seeking to recover the playful, fluid, fearless creativity of childhood.</p>
-        </div>
-        <div>
-          <img src="images/cow_dung_krishna.png" alt="Sacred cow and divine figure blessing a devotee with healing power from cow dung" loading="lazy" style="border-radius:4px;">
-        </div>
+      <img src="images/cow_dung_krishna.png" alt="Sacred cow and divine figure blessing a devotee with healing power from cow dung" loading="lazy" class="section-img reveal">
+
+      <div class="reveal">
+        <blockquote>
+          "The child was thoroughly washed with cow urine and then smeared with the dust raised by the movements of the cows. Then different names of the Lord were applied with cow dung on twelve different parts of His body, beginning with the forehead."
+          <cite>Srimad Bhagavatam 10.6.20 — The childhood of Krishna among the cowherds of Vrindavan</cite>
+        </blockquote>
+
+        <p>There is a detail in the accounts of Krishna's childhood that is often read as simply charming, and rarely examined for what it may actually be describing. Krishna, as a child among the cowherds of Vrindavan, is depicted playing in cow dung — rolling in it, covered in it, entirely unconcerned, as children at play often are.</p>
+        <p>Krishna is also, in the very same tradition, remembered as the supreme artist — the flute player whose music could stop time, the dancer, the poet, the strategist, the one whose creativity and charm were so total that they are described as divine attributes in themselves. The tradition does not explicitly draw a causal line between these two facts. But once you have experienced, even briefly, what direct skin contact with cow dung can do to creativity, fluency of thought, and a sense of "being in the zone" — the line draws itself.</p>
+
+        <blockquote style="margin-top:1.5rem;">
+          "As these realizations crystallized, I recalled scriptural accounts of the young Sri Krishna playing joyfully in the cow dung as a child. I immediately connected his legendary creative brilliance — his timeless mastery of music, dance, and poetry — to this specific childhood activity."
+          <cite>Excerpt from the author's personal account</cite>
+        </blockquote>
+
+        <p>Cow dung may be not merely a remedy for the sick — it may be one of the most powerful and most overlooked developmental tools available to a growing child, or to an adult seeking to recover the playful, fluid, fearless creativity of childhood. Human beings develop their gifts only in an atmosphere of love and support. Where the ground is constantly fed with it, the tree grows almost on its own.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── Personal Experience ────────────────────── -->
+  <!-- Experience -->
   <section class="section" id="experience">
-    <div class="container">
+    <div class="text-block">
       <div class="reveal">
         <span class="eyebrow">A Personal Account</span>
         <h2>My Experience with Cow Dung</h2>
@@ -247,49 +279,44 @@
         <p>My journey with cow dung began in August 2017, while living at Nithyananda Peetham ashram in Bengaluru, India. For seven years I had suffered from psoriasis, and after reading about its healing power, I started applying fresh cow dung to my whole body, leaving it on for a few minutes before rinsing.</p>
         <p>The very next morning, I was astonished: I felt vibrant, joyful, and unusually light in body and mind. My dreams became crystal clear, and I felt a deep sense of peace — like being held in the lap of a loving mother or goddess. Within 2–3 weeks, my psoriasis cleared completely. Even more surprisingly, my skin became smoother, wrinkles faded, and I looked years younger. It works from the inside out: it floods you with love and calm, and true beauty naturally follows.</p>
         <p>Beyond physical healing, it transformed my whole being. My creativity soared, I spoke with new clarity and confidence, and negative thoughts or anxieties simply dissolved. It acted like a powerful shield against stress and bad energy. I realized: <strong>the cow is a goddess</strong>, and her dung carries pure, divine, maternal love that touches you just by making contact with your skin.</p>
-        <p>I later tested it with Western breeds in the UK. Though the smell was stronger, the spiritual and healing power remained fully present. I developed simple ways to use it daily — even in shared spaces — without odor or mess: applying it thinly, drying it quickly, or wearing dedicated cotton clothes. It became my "spiritual antenna," helping me connect deeply to higher states and receive spiritual blessings, even from a distance.</p>
-        <p>When I returned to the UK in 2025 and began volunteering at the cow farm at Bhaktivedanta Manor, I started again. Within weeks, my old peace and joy returned, and my psoriasis healed once more. I found dung from traditional Zebu cows especially powerful, yet <em>any cow's dung</em> — Indian or Western — carries this sacred energy.</p>
+        <p>I later tested it with Western breeds in the UK. Though the smell was stronger, the spiritual and healing power remained fully present. When I returned to the UK in 2025 and began volunteering at the cow farm at Bhaktivedanta Manor, I started again. Within weeks, my old peace and joy returned, and my psoriasis healed once more.</p>
         <p>Cow dung is not just a remedy; it is a direct, simple, and effortless way to experience the divine. You don't need complex rituals or books — just let it touch your skin, and it will do the rest.</p>
-        <a href="my-story.html" class="btn btn-green" style="margin-top:1rem;">See the full story →</a>
+        <a href="my-story.html" class="btn btn-green" style="margin-top:1rem; display:inline-block;">See the full story →</a>
       </div>
     </div>
   </section>
 
-  <!-- ── Real Results ────────────────────────────── -->
-  <section class="section" id="results" style="background: var(--cream-deep);">
-    <div class="container">
+  <!-- Real Results -->
+  <section class="section" id="results" style="background:var(--cream-deep);">
+    <div class="text-block">
       <div class="reveal">
         <span class="eyebrow">Real Results</span>
         <h2>Psoriasis: Sixteen Years, Two Healings</h2>
-        <p>Sixteen years of psoriasis. Nothing that held significant result and held for longer than a month. The first time I applied cow dung — evening after evening, a few minutes each time, washed off without soap — the plaques were gone within two to three weeks. Years later, after a long break from the practice, I started again from scratch. This time it took three months to reach the same clear result.</p>
-        <p>Both times, the food was identical throughout: Indian-style vegetarian meals, cooked and served at the temple — including spices that are not typically recommended for psoriasis. And both times, cow dung worked regardless.</p>
-        <p>What you see in these photographs is not a marketing claim. It is a personal record, taken at the time, by someone who started the practice with no expectation of immediate results and was surprised to the point of needing to re-examine everything he thought he knew about healing.</p>
+        <p>Sixteen years of psoriasis. Nothing that held significant result for longer than a month. The first time I applied cow dung — evening after evening, a few minutes each time, washed off without soap — the plaques were gone within two to three weeks. Years later, after a long break from the practice, I started again from scratch. This time it took three months to reach the same clear result.</p>
+        <p>Both times, the food was identical throughout: Indian-style vegetarian meals, cooked and served at the temple. And both times, cow dung worked regardless.</p>
       </div>
 
-      <div class="photo-grid reveal" style="margin-top:2rem;">
-        <img src="images/cow_dung_psoriasis.png" alt="Before and after photos showing psoriasis healing after 3 months of regular cow dung application" loading="lazy" style="height:320px;">
-        <img src="images/cow_dung_wart.jpg" alt="Close-up of finger showing wart that nearly disappeared after cow dung application" loading="lazy" style="height:320px;">
-      </div>
+      <img src="images/cow_dung_psoriasis.png" alt="Before and after photos showing psoriasis healing after cow dung application" loading="lazy" class="section-img reveal">
+      <p class="section-img-caption reveal">Photographs taken before and after each period of application. No other treatments were introduced during either period.</p>
 
-      <div class="note-box reveal" style="margin-top:1.5rem;">
-        <p>Photographs taken before and after each period of application. No other treatments were introduced during either period. The wart visible on the middle finger — which had remained for a long time — nearly disappeared entirely after cow dung application.</p>
-      </div>
+      <img src="images/cow_dung_wart.jpg" alt="Close-up of finger showing wart that nearly disappeared after cow dung application" loading="lazy" class="section-img reveal" style="max-width:400px;">
+      <p class="section-img-caption reveal">The wart on the middle finger — which had remained for a long time — nearly disappeared entirely after cow dung application.</p>
     </div>
   </section>
 
-  <!-- ── How to Apply teaser ────────────────────── -->
+  <!-- How to Apply -->
   <section class="section" id="guide">
-    <div class="container reveal">
+    <div class="text-block reveal">
       <span class="eyebrow">Ready to Begin?</span>
       <h2>A Quick Practical Taste</h2>
       <p>Cow dung can be used in a short evening application — a few minutes on the skin, rinsed off without soap — or left on overnight inside dedicated dark clothing, or dried on the skin with a hairdryer and worn through the day. Fresh dung from a cleanly fed cow needs little or no odour management; for stronger-smelling material, two to five drops of lemongrass, cedarwood, or tea tree oil eliminates the smell entirely, as does a thin layer of Gopi Chandan clay applied over it.</p>
       <p>It can be used alone or combined with cow urine — either mixed together or layered, with urine applied first. A thin coating is always enough; regularity matters far more than quantity.</p>
       <p>The full step-by-step guide — sourcing, shelf life, clothing, smell management, basic and extended application methods, and where to find cow dung in Hertfordshire — lives on the dedicated How to Apply page.</p>
-      <a href="how-to-apply.html" class="btn btn-gold" style="margin-top:1rem;">How to Apply →</a>
+      <a href="how-to-apply.html" class="btn btn-gold" style="margin-top:1rem; display:inline-block;">How to Apply →</a>
     </div>
   </section>
 
-  <!-- ── Footer ─────────────────────────────────── -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
