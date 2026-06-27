@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Story — The Cow's Touch</title>
+  <meta name="description" content="A first-hand account of the healing and spiritual journey with cow dung and cow urine — from the ashrams of India to the farms of England.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero */
+    .page-hero { position: relative; min-height: unset; }
+    .page-hero img { position: relative !important; width: 100%; height: auto !important; object-fit: unset !important; display: block; }
+    .page-hero-overlay { position: absolute; inset: auto 0 0 0 !important; height: 60%; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(10,7,2,0.75) 65%, rgba(10,7,2,0.92) 100%) !important; }
+    .page-hero-content { position: absolute !important; bottom: 0; left: 0; right: 0; padding: 2.5rem 1.5rem !important; padding-top: 0 !important; max-width: var(--max-w); margin: 0 auto; }
+    .page-hero-content, .page-hero-content h1, .page-hero-content p,
+    .page-hero-content .eyebrow, .page-hero-content .page-subtitle,
+    .page-hero-content .hero-subtext { color: var(--white) !important; }
+    .page-hero-content .page-subtitle { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; }
+    @media (max-width: 699px) {
+      .page-hero { display: flex; flex-direction: column; }
+      .page-hero-overlay { display: none !important; }
+      .page-hero-content { position: relative !important; background: var(--cream); padding: 1.5rem !important; bottom: auto; }
+      .page-hero-content, .page-hero-content h1, .page-hero-content p { color: var(--text) !important; }
+      .page-hero-content .eyebrow { color: var(--gold) !important; }
+      .page-hero-content h1 { color: var(--green) !important; }
+      .page-hero-content .page-subtitle { color: var(--green) !important; }
+      .page-hero-content .hero-subtext { color: var(--text) !important; font-size: 0.95rem; }
+    }
+    /* Layout */
+    .text-block { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+    .text-block p { max-width: none; }
+    .section-img { display: block; width: 100%; max-width: 700px; margin: 2rem auto; border-radius: 6px; box-shadow: 0 8px 32px rgba(44,74,53,0.13); }
+    .photo-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; max-width: 700px; margin: 2rem auto; }
+    .photo-row img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+    @media (max-width: 500px) { .photo-row { grid-template-columns: 1fr; } .photo-row img { height: 220px; } }
+    .part-label { display: inline-block; background: var(--green); color: var(--cream); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 2px; margin-bottom: 0.8rem; }
+    .discovery-box { background: var(--green); color: var(--cream); border-radius: 6px; padding: 1.5rem 2rem; margin: 2rem 0; }
+    .discovery-box h4 { color: var(--gold-light); margin-bottom: 0.5rem; font-size: 1rem; }
+    .discovery-box p { color: rgba(247,242,232,0.88); font-size: 0.9rem; margin: 0; max-width: none; }
+    /* Timeline */
+    .damar-list { list-style: none; margin: 1.5rem 0; padding: 0; }
+    .damar-list li { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--cream-deep); align-items: flex-start; }
+    .damar-list li:last-child { border-bottom: none; }
+    .damar-num { background: var(--gold); color: var(--white); width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 500; flex-shrink: 0; margin-top: 0.2rem; }
+    .damar-content { flex: 1; }
+    .damar-content strong { display: block; color: var(--green); margin-bottom: 0.2rem; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .damar-content p { font-size: 0.88rem; margin: 0; max-width: none; }
+  </style>
+</head>
+<body>
+  <nav class="site-nav"><div class="nav-inner">
+    <a href="index.html" class="nav-logo">Cow's <span>Touch</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="cow-dung.html">Cow Dung</a></li>
+      <li><a href="cow-urine.html">Cow Urine</a></li><li><a href="cow-ghee.html">Cow Ghee</a></li>
+      <li><a href="panchagavya.html">Panchagavya</a></li><li><a href="how-to-apply.html">How to Apply</a></li>
+      <li><a href="protecting-the-cow.html">Protecting the Cow</a></li><li><a href="references.html">References</a></li>
+      <li><a href="my-story.html" class="active">My Story</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div></nav>
+
+  <section class="page-hero">
+    <img src="images/story/story_01_hero.jpg" alt="Manu at the ashram — the beginning of the journey" loading="eager">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="eyebrow">A Personal Journey</span>
+      <h1>My Experience with the Healing &amp; Spiritual Qualities of Cow Dung</h1>
+    </div>
+  </section>
+
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> My Story</div>
+
+  <!-- About Me -->
+  <section class="section">
+    <div class="text-block">
+      <div class="reveal">
+        <img src="images/story/story_02_about_me.jpg" alt="Momchil Pavlov (Manu) — Sri Nithya Uttarananda" loading="lazy" class="section-img">
+        <h2>About Me</h2>
+        <p>My name is <strong>Momchil Pavlov</strong>, though I am widely known by my nickname, <strong>Manu</strong>. My spiritual name is <strong>Sri Nithya Uttarananda</strong>. Originally from Bulgaria, I am a dedicated devotee of the Avatar, HDH Paramahamsa Nithyananda.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); font-style:italic;">January 24, 2018 | Nithyananda Peetham, Bidadi, Bengaluru, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Part One -->
+  <section class="section" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <span class="part-label">Part One</span>
+        <h2>How It Started</h2>
+        <img src="images/story/story_03_part_one.jpg" alt="The ashram goshala where the journey began" loading="lazy" class="section-img">
+        <p>My journey with the extraordinary healing and spiritual dimensions of cow dung began around late August 2017. I had moved to live at the ashram with Swamiji (my guru) earlier that year, in May. Shortly after settling in, I began looking for ways to obtain and use fresh cow urine from our resident cattle for healing purposes. I had suffered from psoriasis for seven years and had discovered through online research that cow urine serves as a comprehensive remedy for numerous ailments.</p>
+        <p>Everything changed when I stumbled upon a video featuring a practitioner from a holistic healing center. The video demonstrated the application of cow dung directly onto a patient's skin, yielding exceptionally positive results for their skin disorder in just fourteen days. Encouraged by this footage, I decided to shift my focus to cow dung — it was readily available and I could collect it independently without needing anyone's permission or assistance.</p>
+        <p>That evening, just before going to bed, I slipped into the bathroom, applied it all over my body, waited a few minutes, and rinsed it away. To my great relief, the dung carried no lingering foul odor, dissolved effortlessly down the bathroom pipes without leaving a trace, and allowed me to fall into a deep, restful sleep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- First Experiences -->
+  <section class="section">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>First Experiences &amp; Spiritual Awakening</h2>
+        <img src="images/story/story_04_first_experiences-goddess-lap.jpg" alt="A vision of sleeping in the lap of a goddess — pure divine love" loading="lazy" class="section-img">
+        <p>Waking up the morning after that first application, I was profoundly astonished. I had absolutely not expected instant results — skin conditions generally require prolonged treatment to show change, so I had anticipated nothing right away. Yet the physical and emotional sensations I experienced upon waking were nothing short of spectacular. I found myself in an exceptionally vibrant, joyful mood.</p>
+        <p>Furthermore, I recalled my dream with absolute clarity. I immediately recognized that this substance possessed an undeniable spiritual efficacy; since dreams are inherently bound to consciousness, the dung was clearly operating as an inductor of higher states of awareness.</p>
+        <blockquote>I felt as if I had slept all night in the lap of my mother, or in the lap of a goddess, and all I had received was love, love, love.</blockquote>
+        <p>Analyzing what was happening to me, I concluded that a highly unique spiritual essence resides within the cow dung, transmitted directly from the cow. The cow was a goddess! <em>That single sentence summarizes the monumental discovery I made completely on my own, feeling as if I were the very first human on planet Earth to uncover it.</em></p>
+      </div>
+
+      <div class="photo-row reveal">
+        <img src="images/story/story_04_end.jpg" alt="Sacred cows at the ashram goshala" loading="lazy">
+        <img src="images/story/story_04_end2.jpg" alt="Sacred cows at the ashram goshala" loading="lazy">
+        <img src="images/story/story_04_end3.jpg" alt="Sacred cows at the ashram goshala" loading="lazy">
+        <img src="images/story/story_04_end4.jpg" alt="Sacred cows at the ashram goshala" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Creativity -->
+  <section class="section" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>Creativity, Meditation &amp; Psychological Healing</h2>
+        <img src="images/story/story_05_creativity_meditation.jpg" alt="Manu in deep meditation and creative flow" loading="lazy" class="section-img">
+        <p>Over the subsequent ten days, I carefully tracked the ongoing effects of the cow dung applications on my day-to-day life. It dramatically amplified my creativity and induced a consistent state of 'being in the zone.' For the first time in three months, my inner space felt completely fluid, free, and unburdened. Positive thoughts manifested effortlessly, and my speech was profoundly impacted; I spoke with greater fluency, and my words carried a palpable, newfound authority.</p>
+        <p>As these realizations crystallized, I recalled scriptural accounts of the young Sri Krishna playing joyfully in the cow dung as a child. I immediately connected his legendary creative brilliance — his timeless mastery of music, dance, and poetry — to this specific childhood activity.</p>
+        <blockquote>Human beings expand their gifts, virtues, and talents exclusively in an atmosphere of absolute love and validation. A child or an adult can never fully express their highest potential in the absence of love.</blockquote>
+        <p>Remarkably, I had found a physical material that could actually transmit this extraordinarily pure, maternal, divine feminine love straight through the skin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cosmetic Results -->
+  <section class="section">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>Cosmetic Breakthroughs &amp; the Mechanics of Inner Beauty</h2>
+        <p>As for my chronic psoriasis, it cleared up entirely within two-three weeks, though a few minor lifestyle steps were required later to ensure complete recovery. This was, without a doubt, the single finest result I had ever achieved in my seven-year history with the disease. Even more astonishingly, I noticed a visible reduction in my wrinkles. My overall skin quality improved dramatically, proving that cow dung functions as a phenomenal cosmetic product.</p>
+        <blockquote>True beauty from within directly manifests as beauty from without. This globally accessible, cost-free resource provides the ultimate cosmetic care alongside a foolproof path to higher consciousness.</blockquote>
+      </div>
+      <div class="photo-row reveal">
+        <img src="images/story/story_06_cosmetic-01.jpg" alt="Cosmetic results from cow dung application" loading="lazy">
+        <img src="images/story/story_06_cosmetic-02.jpg" alt="Cosmetic results from cow dung application" loading="lazy">
+        <img src="images/story/story_06_cosmetic-03.jpg" alt="Cosmetic results from cow dung application" loading="lazy">
+        <img src="images/story/story_06_cosmetic-04.jpg" alt="Cosmetic results from cow dung application" loading="lazy">
+      </div>
+      <div class="photo-row reveal">
+        <img src="images/story/story_06_end-01.jpg" alt="Life at the ashram with the sacred cows" loading="lazy">
+        <img src="images/story/story_06_end-02.jpg" alt="Life at the ashram with the sacred cows" loading="lazy">
+        <img src="images/story/story_06_end-03.jpg" alt="Life at the ashram with the sacred cows" loading="lazy">
+        <img src="images/story/story_06_end04.jpg" alt="Life at the ashram with the sacred cows" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Western Breeds -->
+  <section class="section" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>Experiments with Western Industrial Breeds</h2>
+        <p>Unfortunately, I had to temporarily pause my experiments to travel to the United Kingdom to renew my visa. I grew eager to continue and resolved to secure some cow dung from a local British farmer. These were standard industrial dairy cattle — the classic black-and-white Holstein breed. When I stepped into the bathtub and began applying it, even I — despite my months of training — felt a wave of disgust at the pungent smell. Yet, within barely a minute of application, an unmistakable, deeply soothing wave of calmness swept through my entire body.</p>
+        <img src="images/story/story_07_beach_experience.jpg" alt="Vision on the beach — a feminine presence appearing during meditation" loading="lazy" class="section-img">
+        <p>The following morning, I went down to the seashore for my routine meditation. Shortly after sitting down on the beach, an immensely powerful surge of energy shot upward from the base of my spine directly to the crown of my head. Soon after, with my eyes closed, a distinct feminine form began to manifest vividly in front of me.</p>
+        <div class="discovery-box">
+          <h4>The Key Conclusion</h4>
+          <p>I have detailed this experience using a standard, industrial Holstein dairy cow precisely to prove a crucial point: <strong style="color:var(--gold-light);">even Western commercial cattle are fully capable of transmitting profound healing and high-level spiritual experiences</strong>, despite not being treated with the specialised love, care, and sanctity found in India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spiritual Antenna -->
+  <section class="section">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>The Spiritual Antenna &amp; the Dormitory Protocol</h2>
+        <blockquote>Cow dung acted as my spiritual mobile phone, seamlessly linking me to the subtle realms. It was an automated, direct access point to the cosmic internet of divine feelings, elevated emotions, and expanded states of consciousness.</blockquote>
+        <p>Driven by the constraint of a noisy hair dryer in a quiet dormitory of thirty people, I discovered an even simpler evolution of the system. If your pyjamas are clean and the cow dung is genuinely fresh, you can simply mix the fresh dung with a tiny splash of water, spread it across your skin, and immediately put your dedicated pyjamas on directly over the wet application.</p>
+        <p>I adopted this exact method and slept peacefully night after night in a crowded dormitory, with my friends' beds positioned right next to mine, and absolutely no one ever realised what I was doing.</p>
+      </div>
+      <div class="photo-row reveal">
+        <img src="images/story/story_09_spiritual_antenna_dorm01.jpg" alt="Dormitory life at the ashram" loading="lazy">
+        <img src="images/story/story_09_spiritual_antenna_dorm02.jpg" alt="The communal dormitory where the pajama protocol was perfected" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Discoveries -->
+  <section class="section" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>Core Discoveries &amp; Conclusions</h2>
+        <div class="discovery-box" style="margin-bottom:1.2rem;">
+          <h4>1. A Physical Carrier of Pure Divine Love</h4>
+          <p>You can step into a direct, unmediated experience of ultimate divine love simply by allowing cow dung to interface with your physical skin. The dung must make direct physical contact with the body to transfer the high-frequency spiritual vibrations it holds through the skin, where they can rapidly penetrate to the core of the soul.</p>
+        </div>
+        <div class="discovery-box" style="margin-bottom:1.2rem;">
+          <h4>2. A Direct, Automated Pathway to Enlightenment</h4>
+          <p>A practitioner who regularly applies cow dung to their skin does not strictly require external spiritual texts or human supervision to taste the divine. Cows essentially function as accessible, living enlightened beings distributed across the globe.</p>
+          <blockquote style="background:rgba(255,255,255,0.08); border-left-color:var(--gold-light); color:var(--cream);">"APPLY COW DUNG ON YOUR SKIN." The spiritual weight of those five words vastly exceeds the combined weight of every theological text ever written.</blockquote>
+        </div>
+        <div class="discovery-box">
+          <h4>3. Recovering a Lost Practical Technology</h4>
+          <p>The actual practical technology was lost over the centuries; what survived was merely the outer tradition, the mythologies, and the formal rituals of worship, stripped of the raw, lived experience of the cow's true divine nature.</p>
+        </div>
+      </div>
+      <div class="photo-row reveal">
+        <img src="images/story/story_10_core_discoveries-01.jpg" alt="Life at the ashram goshala with fellow devotees" loading="lazy">
+        <img src="images/story/story_10_core_discoveries-02.jpg" alt="Life at the ashram goshala with fellow devotees" loading="lazy">
+        <img src="images/story/story_10_core_discoveries-03.jpg" alt="Life at the ashram goshala with fellow devotees" loading="lazy">
+        <img src="images/story/story_10_core_discoveries-04.jpg" alt="Life at the ashram goshala with fellow devotees" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Part Two -->
+  <section class="section">
+    <div class="text-block">
+      <div class="reveal">
+        <span class="part-label">Part Two</span>
+        <h2>Renewing the Connection</h2>
+        <p>In June 2018, I had to return to the UK, and life took a different path away from the supportive spiritual community. Sadly, I lost my daily habits, lost contact with the cows, and interrupted my use of cow dung for the next seven years. Predictably, my psoriasis returned.</p>
+        <p>In the middle of 2025, I was invited to join a scientific project back in the UK. It happened to be located right next to the Hare Krishna Temple (Bhaktivedanta Manor) in Watford. Eventually, I became a volunteer at the local cow farm located right inside the temple grounds. The moment I started, a deep sense of regret washed over me for all the years I had let that connection slip.</p>
+      </div>
+      <div class="photo-row reveal">
+        <img src="images/story/story_11_part2-renewal_01.jpg" alt="Manu volunteering at the Hare Krishna Temple cow farm in Watford" loading="lazy">
+        <img src="images/story/story_11_part2-renewal_02.jpg" alt="Manu volunteering at the Hare Krishna Temple cow farm in Watford" loading="lazy">
+        <img src="images/story/story_11_part2-renewal_03.jpg" alt="Manu volunteering at the Hare Krishna Temple cow farm in Watford" loading="lazy">
+        <img src="images/story/story_11_part2-renewal_04.jpg" alt="Manu volunteering at the Hare Krishna Temple cow farm in Watford" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Cow Urine & Two-Layer System -->
+  <section class="section" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>The Breakthrough with Cow Urine &amp; the Two-Layer System</h2>
+        <p>At the end of my first six months at the temple, I stumbled upon literature by the Russian urine therapy authority, Malakhov, which mentioned a simple secret: adding camphor crystals or essential oil to urine can extinguish its sharp smell. I spent ten frustrating days experimenting with essential oils — camphor, tea tree, grapefruit, and lavender.</p>
+        <p>Devastated, I started thinking this was all just a beautiful, impossible dream. Then the very next day, I discovered Ylang Ylang essential oil purely by accident. The effect was entirely different. The smell was instantly eliminated.</p>
+        <div class="discovery-box" style="margin-top:1.5rem;">
+          <h4>The Two-Layer System</h4>
+          <ul style="list-style:none; margin-top:0.5rem;">
+            <li style="padding:0.5rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:rgba(247,242,232,0.85); font-size:0.9rem;"><strong style="color:var(--gold-light);">Layer One</strong> — Apply the raw cow urine (infused with a few drops of essential oil) directly to the skin and let it dry completely.</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:rgba(247,242,232,0.85); font-size:0.9rem;"><strong style="color:var(--gold-light);">Layer Two</strong> — Mix a few drops of essential oil into a water or oil base and apply this layer directly over the dried urine. This second layer effectively seals and neutralises the odour.</li>
+            <li style="padding:0.5rem 0; color:rgba(247,242,232,0.85); font-size:0.9rem;"><strong style="color:var(--gold-light);">Optional Third Layer</strong> — Apply a thin layer of Gopi Chandan paste (clay from the Ganga river used by Krishna devotees) — this seals the scent remarkably well.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Herbal Alchemy -->
+  <section class="section">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>Alchemical Formulations: The Ultimate Herbal Extracts</h2>
+        <p>While diving into urine therapy literature, I discovered another extraordinary piece of information: cow urine can be used to create unparalleled herbal extracts. I inputted data into an AI platform and asked it to compare cow urine to every known extraction medium. I was absolutely stunned by the result: <strong>the AI classified the cow urine herbal extraction method as the absolute best — surpassing alcohol, hydrochloric acid, glycerin, vinegar, oil, and water.</strong></p>
+        <p>It was late May 2026, and the UK countryside was bursting with fresh plant life. Right there in my hands was the opportunity to produce the finest herbal extracts in the world. It felt like a flash of lightning from the sky.</p>
+      </div>
+      <div class="photo-row reveal">
+        <img src="images/story/story_13_herbal_alchemy-01.jpg" alt="Herbal alchemy with cow urine — foraging in the English woods" loading="lazy">
+        <img src="images/story/story_13_herbal_alchemy-02.jpg" alt="Herbal alchemy with cow urine — foraging in the English woods" loading="lazy">
+        <img src="images/story/story_13_herbal_alchemy-03.jpg" alt="Herbal alchemy with cow urine — preparing herbal extracts" loading="lazy">
+        <img src="images/story/story_13_herbal_alchemy-04.jpg" alt="Herbal alchemy with cow urine — preparing herbal extracts" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Damar Tantra -->
+  <section class="section" style="background:var(--cream-deep);">
+    <div class="text-block">
+      <div class="reveal">
+        <h2>The Promises of the Damar Tantra</h2>
+        <p>The <em>Damar Tantra</em> is an ancient 107-verse Sanskrit text structured as a sacred dialogue between Lord Shiva and Goddess Parvati. When a practitioner strictly follows the prescribed routine of <em>Shivambu Kalpa</em>, Lord Shiva guarantees the following progressive rewards:</p>
+        <ul class="damar-list">
+          <li><div class="damar-num">1</div><div class="damar-content"><strong>1 to 2 Months</strong><p>Complete internal purification of the body and a profound stimulation and energisation of all five senses.</p></div></li>
+          <li><div class="damar-num">2</div><div class="damar-content"><strong>3 to 5 Months</strong><p>The total destruction of all deep-seated bodily diseases, freedom from all worldly miseries, and the awakening of Divine Vision (spiritual insight and clairvoyance).</p></div></li>
+          <li><div class="damar-num">3</div><div class="damar-content"><strong>6 to 8 Months</strong><p>The attainment of hyper-intelligence, complete proficiency in the sacred scriptures, extraordinary physical strength, and a permanent, radiant golden glow across the skin.</p></div></li>
+          <li><div class="damar-num">4</div><div class="damar-content"><strong>9 to 11 Months</strong><p>Total eradication of chronic, wasting diseases and the complete purification and absolute luster of every internal organ.</p></div></li>
+          <li><div class="damar-num">5</div><div class="damar-content"><strong>1 Year</strong><p>The practitioner becomes a veritable sun, radiating a magnificent, undeniable physical and spiritual brilliance to everyone around them.</p></div></li>
+          <li><div class="damar-num">6</div><div class="damar-content"><strong>2 to 5 Years</strong><p>Absolute metaphysical conquest over the elemental realms — conquering Earth (2 years), Water (3 years), Light/Fire (4 years), and Air (5 years).</p></div></li>
+          <li><div class="damar-num">7</div><div class="damar-content"><strong>7 to 8 Years</strong><p>The complete dissolution of the ego-self and absolute mastery over all the primary forces of Nature.</p></div></li>
+          <li><div class="damar-num">8</div><div class="damar-content"><strong>9 Years</strong><p>Liberation from the wheel of Samsara — the practitioner is permanently freed from the cycle of birth and death.</p></div></li>
+          <li><div class="damar-num">9</div><div class="damar-content"><strong>10 to 11 Years</strong><p>The attainment of physical levitation and effortless astral flight, alongside the ability to clearly hear the direct voice of the soul.</p></div></li>
+          <li><div class="damar-num">10</div><div class="damar-content"><strong>12 Years</strong><p>The attainment of physical immortality. The body is permanently freed from ageing, wrinkles, and grey hair. The practitioner commands the strength of a thousand elephants.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="section">
+    <div class="text-block reveal">
+      <h2>The Cow's Touch</h2>
+      <p>A touch on the skin. That's all that the Goddess hidden in this most extraordinary magical being is asking from us.</p>
+      <blockquote>"Just allow me to touch you. Leave all the rest to me ☺"</blockquote>
+      <p>I am infinitely grateful to both spiritual communities for providing the environments necessary to establish this practical framework. This system bridges ancient, time-tested consciousness technologies with the demands of modern everyday life.</p>
+      <a href="contact.html" class="btn btn-gold" style="margin-top:1rem; display:inline-block;">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <div class="footer-brand"><h3>Cow's Touch</h3><p>The sacred gifts of the cow — tradition, science, and lived experience.</p></div>
+    <div class="footer-col"><h4>The Gifts</h4><ul><li><a href="cow-dung.html">Cow Dung · Gomaya</a></li><li><a href="cow-urine.html">Cow Urine · Gomutra</a></li><li><a href="cow-ghee.html">Cow Ghee · Ghrita</a></li><li><a href="panchagavya.html">Panchagavya</a></li></ul></div>
+    <div class="footer-col"><h4>Explore</h4><ul><li><a href="how-to-apply.html">How to Apply</a></li><li><a href="protecting-the-cow.html">Protecting the Cow</a></li><li><a href="references.html">References &amp; Links</a></li></ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul><li><a href="my-story.html">My Story</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  </div><div class="footer-bottom"><span>© 2026 Cow's Touch. Traditional practice shared from personal experience — not medical advice.</span><span class="footer-mantra">Gomaye vasate Lakshmi · Gomutre Dhanvantari</span></div></footer>
+  <script>
+    const t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+    t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+    l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{l.classList.remove('open');t.setAttribute('aria-expanded',false);}));
+    document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');}});},{threshold:0.06}).observe(el));
+  </script>
+</body>
+</html>
