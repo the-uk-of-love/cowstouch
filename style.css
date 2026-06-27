@@ -572,6 +572,7 @@ blockquote cite {
 @media (max-width: 700px) {
   .two-col { grid-template-columns: 1fr; }
   .two-col.reverse { direction: ltr; }
+  .two-col img { width: 100%; max-height: 320px; object-fit: cover; }
 }
 
 /* ── Mini link cards (bottom of homepage) ────── */
@@ -958,7 +959,12 @@ blockquote cite {
   }
 }
 
-/* ── Utility ──────────────────────────────────── */
+/* ── Mobile body text fix ─────────────────────── */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  p { line-height: 1.65; }
+  .two-col img { max-height: 260px; }
+}
 .text-center { text-align: center; }
 .text-center p { margin-left: auto; margin-right: auto; }
 .mt-1 { margin-top: 0.5rem; }
