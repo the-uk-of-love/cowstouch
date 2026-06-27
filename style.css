@@ -986,3 +986,21 @@ blockquote cite {
 .gold { color: var(--gold); }
 .italic { font-style: italic; }
 .font-display { font-family: var(--font-display); }
+
+/* ── Grid cell paragraph fix ──────────────────── */
+/* Prevents global max-width:68ch from squeezing text inside grid columns */
+.apply-steps p,
+.oil-list p,
+.method-card p,
+.blend-box p,
+.veda-entry p,
+.gift-item p,
+.science-item p,
+.usage-card p,
+.usage-card-p p,
+.quality-item p,
+.five-el p,
+.contact-block p,
+.protection-card-body p {
+  max-width: none !important;
+}
