@@ -561,7 +561,7 @@ blockquote cite {
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   max-width: var(--max-w-wide);
   margin: 0 auto;
@@ -570,9 +570,18 @@ blockquote cite {
 .two-col.reverse > * { direction: ltr; }
 .two-col img { border-radius: 4px; width: 100%; }
 @media (max-width: 700px) {
-  .two-col { grid-template-columns: 1fr; }
-  .two-col.reverse { direction: ltr; }
-  .two-col img { width: 100%; max-height: 320px; object-fit: cover; }
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    direction: ltr !important;
+  }
+  .two-col > * { direction: ltr; }
+  .two-col img {
+    width: 100% !important;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
 }
 
 /* ── Mini link cards (bottom of homepage) ────── */
