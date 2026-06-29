@@ -145,7 +145,6 @@
         </ul>
 
         <h3 style="margin-top:2rem;">How to Apply Cow Urine</h3>
-        <a href="images/cow_urine_leaflet.png" download="Sacred_Cow_Herbal_Extract_Leaflet.png" style="display:inline-flex; align-items:center; gap:0.5rem; margin-bottom:1.2rem; padding:0.55rem 1.1rem; background:var(--green); color:var(--cream); border-radius:3px; font-size:0.82rem; font-family:var(--font-body); letter-spacing:0.05em; text-decoration:none; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download Application Leaflet (PNG)</a>
         <ul class="apply-steps">
           <li><span class="step-num">1</span><div class="step-content"><strong>Apply to clean skin</strong><p>Face, neck, chest, arms, legs, or the whole body.</p></div></li>
           <li><span class="step-num">2</span><div class="step-content"><strong>Massage gently</strong><p>Until fully absorbed or almost dry.</p></div></li>
@@ -185,7 +184,6 @@
         </div>
 
         <h3 style="margin-top:2rem;">Application Methods</h3>
-        <a href="images/cow_dung_leaflet.png" download="Sacred_Cow_Fresh_Dung_Leaflet.png" style="display:inline-flex; align-items:center; gap:0.5rem; margin-bottom:1.2rem; padding:0.55rem 1.1rem; background:var(--green); color:var(--cream); border-radius:3px; font-size:0.82rem; font-family:var(--font-body); letter-spacing:0.05em; text-decoration:none; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download Application Leaflet (PNG)</a>
         <div class="method-card">
           <h4>Basic Application: Apply and Wash Off</h4>
           <p>Apply a small amount of fresh dung — about the size of half a walnut. Rub between your palms, then spread lightly over the skin. Massage gently for 5–15 minutes. Rinse off with <strong>water only — do not use soap.</strong></p>
